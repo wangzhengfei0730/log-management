@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+  - <log_directory_path>/*.log
+
+output.logstash:
+  hosts: ["<logstash_ip>:<logstash_port>"]
